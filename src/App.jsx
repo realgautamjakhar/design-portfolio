@@ -48,7 +48,7 @@ function App() {
     <div className='App'>
       <header>
 		<img src={logo} alt=""/>
-		<button>Free Consultation</button>
+		<button className='black-btn'>Free Consultation</button>
 	</header>
 	<main>
 		<section>
@@ -90,12 +90,12 @@ function App() {
 				<li><img src={Img4} alt=""/></li>
 				<li><img src={Img5} alt=""/></li>
 			</ul>
-			<section className="change-buttons">
+			<section className="change-buttons-container">
 				<button id="prev-btn" onClick={showPrevImage} ><img src={arrowleft} alt=""/></button>
 				<button id="next-btn" onClick={showNextImage} ><img src={arrowright} alt=""/></button>
 			</section>
 		</section>
-		<section className="book-call">
+		<section >
 			<section>
 				<h3>Book a call with me</h3>
 				<p>I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
@@ -106,7 +106,7 @@ function App() {
 	</main>
 	<footer>
 		<img src={logo} alt=""/>
-	<button>Free Consultation</button>
+	<button className='black-btn'>Free Consultation</button>
 	</footer>
     </div>
   );
