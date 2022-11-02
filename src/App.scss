@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+
+
+*,*::after,*::before{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.App {
+      margin: auto;
+      
+      max-width: 1440px;
+      font-family: 'Plus jakarta sans';
+}
+
+header,footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+}
+header button,footer button {
+      color: white;
+      background-color: black;
+      padding: 1rem 3rem 1rem 3rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+}
+
+main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+}
+main section:nth-child(1){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5rem;
+}
+main section:nth-child(1) div {
+      max-width: max-content;
+}
+main section:nth-child(1) h2{
+      font-size: 3.5rem;
+      margin-top: 2rem;
+}
+main section:nth-child(1) p{
+      font-size: 1rem;
+      margin-top: 2rem;
+      max-width: fit-content;
+}
+main section:nth-child(1) ul {
+      margin-top: 5rem;
+      display: grid;
+      width: 100%;
+      grid-template-areas: "graphic graphic ux apps photography photography"
+      "graphic graphic illustration illustration motion motion";
+      gap: 1rem;
+      grid-template-columns: repeat(6,minmax(auto,auto));
+      grid-template-rows: repeat(2,minmax(auto,225px));
+}
+main section:nth-child(1) ul li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 2rem;
+      border-radius: 1rem;
+      color: white;
+}
+main section:nth-child(1) ul li img {
+      align-self: end;
+}
+main section:nth-child(1) ul li h3 {
+      font-size: 1.5rem;
+}
+main section:nth-child(1) ul li:nth-child(1) {
+      grid-area: graphic;
+      background-color: hsl(252,66%,62%);
+}
+main section:nth-child(1) ul li:nth-child(2) {
+      grid-area: ux;
+      background-color: hsl(28,89%,67%);
+}
+main section:nth-child(1) ul li:nth-child(3) {
+      grid-area: apps;
+      background-color: aqua;
+      background-color: hsl(0,78%,79%);
+}
+main section:nth-child(1) ul li:nth-child(4) {
+      grid-area: photography;
+      background-color: hsl(172,46%,57%);
+}
+main section:nth-child(1) ul li:nth-child(5) {
+      grid-area: illustration;
+      background-color: hsl(7,77%,66%);
+}
+main section:nth-child(1) ul li:nth-child(6) {
+      grid-area: motion;
+      background-color: hsl(314,45%,23%);
+}
+
+main section:nth-child(2) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+main section:nth-child(2) img {
+      width: 80%;
+      height: auto;
+      object-fit: contain;
+}
+
+main section:nth-child(2) section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      width: fit-content;
+}
+main section:nth-child(2) section h3 {
+      font-size: 2rem;
+      width: fit-content;
+}
+main section:nth-child(2) section p {
+      font-size: 1rem;
+      width: initial;
+}
+.orange-btn{
+      color: white;
+      background-color: hsl(7,77%,66%);
+      padding: 1rem 3rem 1rem 3rem;
+      border-radius: 50px;
+      font-weight: 700;
+      border: none;
+      font-size: 1rem;
+}
+main section:nth-child(3) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+}
+main section:nth-child(3) h3 {
+      margin: auto;
+      font-size: 2rem;
+}
+
+.images {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      overflow: auto;
+}
+
+::-webkit-scrollbar {
+      width:.5rem;
+  }
+  ::-webkit-scrollbar-track {
+      background: aliceblue;
+      width:.5rem;
+  }
+  ::-webkit-scrollbar-thumb {
+      background-color: hsl(7,77%,66%);
+      border-radius: 50px;
+  }
+
+  
+main section:nth-child(3) .change-buttons {
+      display: flex;
+      flex-direction: row;
+}
+.change-buttons button {
+      background-color: black;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+}
+main section:nth-child(4){
+      max-width:70rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      justify-items: center;
+      align-items: center;
+      background-color: black;
+      color: white;
+      border-radius: 1rem;
+      padding: 3rem;
+      height: fit-content;
+}
+main section:nth-child(4) section {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+}
+footer {
+      margin-bottom: 2rem;
+}
+
+main > section {
+      margin: 2rem 0rem;
+}
+
+@media screen and (max-width: 800px) {
+      .App{
+            margin-left: 1rem;
+             margin-right: 1rem;
+      }
+      main section:nth-child(1) ul {
+            margin-top: 3rem;
+            display: grid;
+            width: 100%;
+            grid-template-areas: "graphic graphic ux apps" 
+            "graphic graphic illustration illustration "
+            "photography photography motion motion";
+            gap: 1rem;
+            grid-template-columns: repeat(4,minmax(auto,auto));
+            grid-template-rows: repeat(3,minmax(auto,225px));
+      }
+}
+@media screen and (max-width: 550px) {
+      main section:nth-child(1) ul {
+            margin-top: 2rem;
+            display: grid;
+            width: 100%;
+            justify-content: center;
+            grid-template-areas: "graphic graphic" "ux apps"
+            "illustration illustration "
+            "photography photography " "motion motion";
+            gap: 1rem;
+            grid-template-columns: repeat(2,minmax(auto,300px));
+            grid-template-rows: repeat(5,minmax(auto,200px));
+      }
+      main section:nth-child(1) {
+            justify-content: center;
+            align-items: center;
+      }
+      main section:nth-child(4){
+            max-width:70rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+      }
+}
